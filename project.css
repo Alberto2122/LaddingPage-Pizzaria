@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
+/* Estilizaçõa da pagina inteira*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,6 +13,8 @@
     border: none;
     text-decoration: none;
 }
+
+/* Estilização do body*/
 
 html {
     width: 100vw;

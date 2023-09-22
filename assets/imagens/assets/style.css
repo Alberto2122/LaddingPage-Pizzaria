@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 /* Estilizaçõa da pagina inteira*/
 
 * {
@@ -17,7 +20,7 @@ html {
     width: 100vw;
     height: 100vh;
     font-size: 62.5%;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', sans-serif;
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -42,29 +45,21 @@ html {
     height: auto;
     cursor: pointer;
     display: flex;
-    align-items: center
+    align-items: center;
 }
-
 
 
 .logo h3 {
    color: white;
    font-size: 1.6rem;
-   transition: 1ms;
-}
 
-.logo h3:hover{
-    color: #d32cf5;
 }
-
 
 
 .logo img {
     width: 100%;
     height: 100%;
-    transition: 1s;
 }
-
 
 .content .list-menu {
     width: 600px;
@@ -88,7 +83,7 @@ html {
 .content .list-menu li a:hover{
     background-color: #333333;
     border-bottom: 4px solid #ffc506;  
-    color: #d32cf5;
+    color: #ffc506;
 }
 
 /* Primeira Seção */
@@ -120,7 +115,7 @@ html {
     font-size: 6rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Indie Flower', cursive;
 }
 
 .first-section h2{
@@ -128,13 +123,13 @@ html {
     font-size: 3rem;
     font-weight: 400;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Indie Flower', cursive;
     margin-bottom: 3rem;
 }
 
 .btn button {
     width: 230px;
-    height: 85px;
+    height: 60px;
     cursor: pointer;
     text-transform: uppercase;
     background-color: #ffc506;
@@ -146,7 +141,7 @@ html {
 }
 
 .btn button:hover {
-    border: 1px solid #d32cf5;
+    border: 1px solid #ffc506;
     background-color: transparent;
     color: #ffc506;
 }
@@ -170,17 +165,12 @@ html {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Playfair Display', serif;
 }
 
 .cardapio h2 {
     font-size: 5rem;
     color: #e6e6e6;
     text-transform: uppercase;
-}
-
-.cardapio h2:hover{
-    color: #d32cf5;
 }
 
 .itens-cardapio {
@@ -193,7 +183,6 @@ html {
     align-items: center;
     gap: 30px;
 }
-
 
 .itens-cardapio .info {
     background-color: rgb(221, 221, 221);
@@ -318,11 +307,7 @@ html {
 .contatos h3 {
    font-size: 6rem;
    margin-bottom: 3rem;
-   font-family: 'Playfair Display', serif;
-}
-
-.contatos h3:hover{
-    color: #d32cf5;
+   font-family: 'Indie Flower', cursive;
 }
 
 .contatos-secao {

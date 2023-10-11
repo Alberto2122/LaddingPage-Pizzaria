@@ -297,6 +297,10 @@ html {
    font-family: 'Indie Flower', cursive;
 }
 
+.contentsobre h2:hover {
+    color: orange;
+}
+
 .contentsobre p {
    text-align: center;
    font-size: 1.8rem;

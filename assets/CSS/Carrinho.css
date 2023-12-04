@@ -23,7 +23,7 @@ html {
     align-items: center;
     background-color: #1f1e1f;
     position: fixed;
-    padding-left: 30rem;
+    /* padding-left: 30rem; */
 }
 
 .logo {
@@ -116,6 +116,7 @@ html {
 
 .contenedor .contenedor-items .item:hover {
     box-shadow: 0 0 10px yellow;
+    cursor: pointer;
     scale: 1.05;
 }
 
@@ -146,7 +147,7 @@ html {
 
 .contenedor .contenedor-items .item .boton-item:hover {
     transition: 0.2ms;
-    background-color: orange;
+    background-color: #ffff00;
     scale: 1.25;
 }
 
@@ -286,7 +287,7 @@ html {
 
 
 .img-background {
-    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url('/assets/imagens/Index.Img/fundopizza.jpg');
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url('../imagens/Index.Img/fundopizza.jpg');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -321,7 +322,7 @@ html {
 @media (max-width: 870px) {
     .content {
         justify-content: space-between;
-        padding: 0px 40px;
+        padding: 0px;
     }
 
     .content .list-menu {
@@ -341,7 +342,7 @@ html {
     .menu-toggle {
         width: 40px;
         height: 30px;
-
+        padding-right: 40px;
 
     }
 

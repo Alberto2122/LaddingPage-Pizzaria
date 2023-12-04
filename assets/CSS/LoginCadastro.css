@@ -12,7 +12,7 @@ input {
 .container {
     position: relative;
     width: 100%;
-    background-color: #fff;
+    background-color: #333;
     min-height: 100vh;
     overflow: hidden;
 }
@@ -60,7 +60,7 @@ form.sign-in-form {
 
 .title {
     font-size: 2.2rem;
-    color: #444;
+    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -92,7 +92,7 @@ form.sign-in-form {
     line-height: 1;
     font-weight: 600;
     font-size: 1.1rem;
-    color: #333;
+    color: #fff;
 }
 
 .input-field input::placeholder {
@@ -101,6 +101,7 @@ form.sign-in-form {
 }
 
 .social-text {
+    color: #fff;
     padding: 0.7rem 0;
     font-size: 1rem;
 }
@@ -117,27 +118,27 @@ form.sign-in-form {
     justify-content: center;
     align-items: center;
     margin: 0 0.45rem;
-    color: #333;
+    color: #fff;
     border-radius: 50%;
-    border: 1px solid #333;
+    border: 1px solid #fff;
     text-decoration: none;
     font-size: 1.1rem;
     transition: 0.3s;
 }
 
 .social-icon:hover {
-    color: #4481eb;
-    border-color: #4481eb;
+    background-color: #000;
+    color: #fff;
 }
 
 .btn {
     width: 150px;
-    background-color: orange;
+    background-color: #ffff00;
     border: none;
     outline: none;
     height: 49px;
     border-radius: 49px;
-    color: #fff;
+    color: #333;
     text-transform: uppercase;
     font-weight: 600;
     margin: 10px 0;
@@ -146,7 +147,8 @@ form.sign-in-form {
 }
 
 .btn:hover {
-    background-color: #4481eb;
+    background-color: #000;
+    color: #fff;
 }
 
 .panels-container {
@@ -167,7 +169,7 @@ form.sign-in-form {
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background-image: linear-gradient(-45deg, orange 0%, orange 100%);
+    background-image: linear-gradient(-45deg, #ffff00 0%, #ffff00 100%);
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
@@ -199,7 +201,7 @@ form.sign-in-form {
 }
 
 .panel .content {
-    color: #fff;
+    color: #333;
     transition: transform 0.9s ease-in-out;
     transition-delay: 0.6s;
 }
@@ -218,7 +220,7 @@ form.sign-in-form {
 .btn.transparent {
     margin: 0;
     background: none;
-    border: 2px solid #fff;
+    border: 2px solid #333;
     width: 130px;
     height: 41px;
     font-weight: 600;
@@ -226,7 +228,8 @@ form.sign-in-form {
 }
 
 .btn.transparent:hover {
-    background-color: #4481eb;
+    background-color: #000;
+    color: #fff;
 }
 
 

@@ -7,29 +7,72 @@
 }
 
 
+html {
 
-header {
-    background: url('/assets/imagens/Pizzas/estilo-minimalista-de-pizza-isolado-em-um-fundo-laranja_342803-109.avif');
-    background-size: cover;
-    background-position: center;
-    height: 300px;
+    font-size: 62.5%;
+    font-family: 'Noto Sans', sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
-header h3 {
-    text-align: center;
-    font-size: 35px;
-    /* background-color: #000; */
-    color: #fff;
-    padding: 30px 10px 10px 10px;
+.content {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1f1e1f;
+    position: fixed;
+    padding-left: 30rem;
 }
 
-header h3 a {
-    text-align: center;
-    font-size: 35px;
-    color: #fff;
-    padding: 30px 0;
+.logo {
+    width: 70px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
 }
 
+
+.logo h3 {
+    color: white;
+    font-size: 1.6rem;
+    text-wrap: nowrap;
+}
+
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .list-menu {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content .list-menu li a {
+    text-decoration: none;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 200ms ease-in;
+}
+
+.content .list-menu li a:hover {
+    background-color: #333333;
+    border-bottom: 4px solid #ffc506;
+    color: #ffc506;
+}
 
 .contenedor {
     max-width: 1200px;
@@ -45,7 +88,7 @@ header h3 a {
 
 /* SECCION CONTENEDOR DE ITEMS */
 .contenedor .contenedor-items {
-    margin-top: 30px;
+    margin-top: 10%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     grid-gap: 30px;
@@ -57,11 +100,13 @@ header h3 a {
 .contenedor .contenedor-items .item {
     max-width: 200px;
     margin: auto;
+    color: #fff;
     border: 1px solid #666;
     border-radius: 10px;
     padding: 20px;
     transition: 0.3s;
     border-width: 1px;
+    font-size: 15px;
 }
 
 .contenedor .contenedor-items .item .img-item {
@@ -70,7 +115,7 @@ header h3 a {
 }
 
 .contenedor .contenedor-items .item:hover {
-    box-shadow: 0 0 10px #666;
+    box-shadow: 0 0 10px yellow;
     scale: 1.05;
 }
 
@@ -85,7 +130,7 @@ header h3 a {
     display: block;
     text-align: center;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .contenedor .contenedor-items .item .boton-item {
@@ -99,12 +144,18 @@ header h3 a {
     cursor: pointer;
 }
 
+.contenedor .contenedor-items .item .boton-item:hover {
+    transition: 0.2ms;
+    background-color: orange;
+    scale: 1.25;
+}
+
 
 /* seccion carrito */
 .carrito {
     border: 1px solid #666;
     width: 35%;
-    margin-top: 30px;
+    margin-top: 10%;
     border-radius: 10px;
     overflow: hidden;
     margin-bottom: auto;
@@ -121,6 +172,10 @@ header h3 a {
     color: #fff;
     text-align: center;
     padding: 30px 0;
+}
+
+.carrito .header-carrito h2 {
+    font-size: 25px;
 }
 
 .carrito .carrito-item {
@@ -228,8 +283,23 @@ header h3 a {
     transition: .3s;
 }
 
+
+
+.img-background {
+    background-image: linear-gradient(rgba(29, 29, 29, 0.8), rgba(29, 29, 29, 0.8)), url('/assets/imagens/Index.Img/fundopizza.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .carrito-total .btn-pagar:hover {
     scale: 1.05;
+    background-color: orange;
 }
 
 /* SECCION RESPONSIVE */
@@ -245,4 +315,100 @@ header h3 a {
     .carrito {
         width: 100%;
     }
+}
+
+/* Header */
+@media (max-width: 870px) {
+    .content {
+        justify-content: space-between;
+        padding: 0px 40px;
+    }
+
+    .content .list-menu {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        width: 100%;
+        height: 4px;
+        background-color: white;
+        margin: 6px auto;
+        transition-duration: 0.5s;
+    }
+
+    .menu-toggle {
+        width: 40px;
+        height: 30px;
+
+
+    }
+
+    .content.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #1f1e1f;
+        z-index: 10;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content.on .logo {
+        display: none;
+    }
+
+    .content.on .menu-toggle {
+        position: absolute;
+        right: 40px;
+        top: 20px;
+    }
+
+    .content.on .list-menu {
+        display: block;
+
+    }
+
+    .content.on .list-menu li {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .content.on .list-menu li a {
+        font-size: 4rem;
+        display: block;
+    }
+
+
+    .content.on .menu-toggle .one {
+        transform: rotate(45deg) translate(8px, -7px);
+    }
+
+    .content.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .content.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(20px, -6px);
+    }
+
+    .contatos-secao {
+        display: block;
+        text-align: center;
+        font-size: 2rem;
+
+    }
+
+    .contatos-secao div {
+        margin: 2rem;
+
+    }
+
 }
